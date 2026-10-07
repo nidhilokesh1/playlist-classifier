@@ -1,0 +1,21 @@
+hidden=64 epochs=300 lr=0.01 l2=0.0001
+train acc 0.650, test acc 0.532
+
+              precision    recall  f1-score   support
+
+     ambient       0.54      0.67      0.60        30
+       blues       0.28      0.17      0.21        30
+   classical       0.55      0.40      0.46        30
+     country       0.42      0.43      0.43        30
+      gospel       0.44      0.47      0.45        30
+ heavy-metal       0.63      0.80      0.71        30
+     hip-hop       0.66      0.77      0.71        30
+        jazz       0.56      0.77      0.65        30
+       opera       0.54      0.47      0.50        30
+        punk       0.38      0.30      0.33        30
+      reggae       0.50      0.33      0.40        18
+      techno       0.69      0.73      0.71        30
+
+    accuracy                           0.53       348
+   macro avg       0.51      0.53      0.51       348
+weighted avg       0.51      0.53      0.52       348

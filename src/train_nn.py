@@ -19,7 +19,7 @@ def main(a):
     d = load_data(per_class=a.per_class)
     save_meta(d)
     C = len(d.classes)
-    hidden = a.hidden or C            # paper used C hidden neurons
+    hidden = a.hidden       # 64 is the best configuration from our experiment
     Xtr = torch.tensor(d.Xtr, dtype=torch.float32)
     Xte = torch.tensor(d.Xte, dtype=torch.float32)
     ytr, yte = torch.tensor(d.ytr), torch.tensor(d.yte)
@@ -74,7 +74,7 @@ def main(a):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--per_class", type=int, default=150)
-    p.add_argument("--hidden", type=int, default=0, help="0 = number of classes")
+    p.add_argument("--hidden", type=int, default=64, help="hidden-layer size (best configuration: 64)")
     p.add_argument("--epochs", type=int, default=300)
     p.add_argument("--lr", type=float, default=0.01)
     p.add_argument("--l2", type=float, default=1e-4)

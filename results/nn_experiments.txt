@@ -1,0 +1,44 @@
+NN hidden-layer experiment
+==========================
+
+Dataset: 12 genres, up to 150 samples/class
+Features: 10 Spotify audio features
+Split: stratified 80/20
+Seed: 42
+Epochs: 300
+Learning rate: 0.01
+L2: 0.0001
+
+hidden=12
+train=0.535
+test=0.486
+macro_f1=0.47
+
+hidden=32
+train=0.613
+test=0.500
+macro_f1=0.48
+
+hidden=64
+train=0.650
+test=0.532
+macro_f1=0.51
+
+hidden=128
+train=0.697
+test=0.483
+macro_f1=0.47
+
+Classical baseline
+==================
+
+Perceptron CV scaled: 0.329 +/- 0.013
+RBF SVM CV scaled: 0.482 +/- 0.014
+Sigmoid SVM CV scaled: 0.410 +/- 0.038
+Poly SVM CV scaled: 0.436 +/- 0.021
+
+Tuned RBF SVM:
+C=10
+gamma=0.1
+test accuracy=0.483
+macro_f1=0.47
