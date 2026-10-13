@@ -1,0 +1,23 @@
+Model: Perceptron
+Test accuracy: 0.3420
+Macro F1: 0.2951
+Weighted F1: 0.3053
+
+              precision    recall  f1-score   support
+
+     ambient       0.32      0.83      0.46        30
+       blues       0.33      0.03      0.06        30
+   classical       0.36      0.17      0.23        30
+     country       0.06      0.03      0.04        30
+      gospel       0.30      0.47      0.37        30
+ heavy-metal       0.48      0.77      0.59        30
+     hip-hop       0.59      0.43      0.50        30
+        jazz       0.23      0.10      0.14        30
+       opera       0.54      0.23      0.33        30
+        punk       0.17      0.33      0.22        30
+      reggae       0.00      0.00      0.00        18
+      techno       0.65      0.57      0.61        30
+
+    accuracy                           0.34       348
+   macro avg       0.34      0.33      0.30       348
+weighted avg       0.35      0.34      0.31       348

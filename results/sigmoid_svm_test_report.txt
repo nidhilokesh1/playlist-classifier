@@ -1,0 +1,23 @@
+Model: Sigmoid SVM
+Test accuracy: 0.4282
+Macro F1: 0.4099
+Weighted F1: 0.4177
+
+              precision    recall  f1-score   support
+
+     ambient       0.44      0.50      0.47        30
+       blues       0.22      0.17      0.19        30
+   classical       0.38      0.47      0.42        30
+     country       0.31      0.37      0.33        30
+      gospel       0.37      0.37      0.37        30
+ heavy-metal       0.43      0.67      0.53        30
+     hip-hop       0.53      0.67      0.59        30
+        jazz       0.36      0.27      0.31        30
+       opera       0.46      0.43      0.45        30
+        punk       0.44      0.37      0.40        30
+      reggae       0.50      0.11      0.18        18
+      techno       0.76      0.63      0.69        30
+
+    accuracy                           0.43       348
+   macro avg       0.43      0.42      0.41       348
+weighted avg       0.43      0.43      0.42       348

@@ -1,0 +1,23 @@
+Model: RBF SVM
+Test accuracy: 0.4828
+Macro F1: 0.4616
+Weighted F1: 0.4674
+
+              precision    recall  f1-score   support
+
+     ambient       0.50      0.70      0.58        30
+       blues       0.31      0.17      0.22        30
+   classical       0.61      0.37      0.46        30
+     country       0.39      0.37      0.38        30
+      gospel       0.31      0.43      0.36        30
+ heavy-metal       0.51      0.73      0.60        30
+     hip-hop       0.62      0.70      0.66        30
+        jazz       0.46      0.57      0.51        30
+       opera       0.52      0.50      0.51        30
+        punk       0.39      0.23      0.29        30
+      reggae       0.44      0.22      0.30        18
+      techno       0.66      0.70      0.68        30
+
+    accuracy                           0.48       348
+   macro avg       0.48      0.47      0.46       348
+weighted avg       0.48      0.48      0.47       348
